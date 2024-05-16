@@ -5,50 +5,91 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+>**Understanding Climate Change through Data Analysis**
 
 ### Authors
 
-Names of your team members
+>Natnael Tekie, 2122558, Ntekie@uw.edu
 
 ### Date
 
-Winter 2022
+>April 30<sup>th</sup>, Winter 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
-
+>This project aims to analyze various aspects of climate change through data exploration and analysis. 
+By examining datasets related to climate indicators, greenhouse gas emissions, and environmental impacts, 
+we seek to uncover patterns, trends, and correlations to deepen our understanding of climate change dynamics.
 ### Keywords
 
 3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+>Climate Change, Data Analysis, Environmental Science, Greenhouse Gas Emissions, Sustainability
 
-### Introduction  
+### Introduction 
+>This project seeks to delve into the multifaceted issue of climate change by posing several research questions:
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+>- What are the trends in global temperature, sea level rise, and other climate indicators over the past century?
+>- How do human activities, such as industrialization and deforestation, contribute to greenhouse gas emissions?
+>- What are the regional and global impacts of climate change on ecosystems, biodiversity, and human societies?
+>- What mitigation and adaptation strategies are being implemented to address climate change, and what are their effectiveness and challenges?</br>
+<p>
+
+>These questions are motivated by the urgency of understanding and addressing climate change, 
+a defining challenge of the 21<sup>st</sup> century with profound implications 
+for the environment, economy, and society.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+>Climate change has been extensively studied across various disciplines, with numerous 
+research papers, reports, and initiatives dedicated to understanding its causes, impacts, 
+and solutions. For example, the Intergovernmental Panel on Climate Change (Hansen et al., 2018) 
+provides comprehensive assessments of the scientific basis of climate change and its 
+potential impacts. Additionally, academic studies such as those by Le Quéré et al. (2020) 
+offer insights into the latest trends in global temperature rise. Furthermore, organizations 
+like NASA and NOAA provide valuable datasets and analyses on climate indicators and 
+environmental changes.
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> **Where did you find the data?** 
+*Please include a link to the data source*<br/>
+This dataset in use was obtained from Kaggle, the largest online data science repository. 
+https://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data
+
+> **Who collected the data?**  
+The data was collected by Berkelye Earth, California-based independent 501 non-profit focused on land temperature data analysis for climate science. 
+Additionally, the Kaggle team played a major collaboration role in the data collection process. <br/>
+
+> **How was the data collected or generated?**  
+The Berkeley Earth Surface Temperature Study combines 1.6 billion temperature reports from 16 pre-existing archives. It is nicely packaged and allows for slicing into interesting subsets (for example by country). They publish the source data and the code for the transformations they applied.
+
+> **Why was the data collected?**  
+Berkeley collectes and publishes scientific and data analysis data to help deliver and communicate their findings to the broadest possible audience.
+
+> **How many observations (rows) are in your data?**  
+3192 rows 
+
+> **How many features (columns) are in the data?**  
+9 columns 
+
+> **What, if any, ethical questions or questions of power do you need to consider when working with this data?**  
+When using temperature data from Berkeley Earth, ethical considerations include evaluating the accuracy of instruments used for data collection and ensuring transparency regarding calibration and potential biases. 
+
+> **What are possible limitations or problems with this data?   (at least 200 words)** <br/>
+Berkeley Earth data contains n/a values, posing a significant challenge due to their potential to distort analyses and undermine data integrity. Addressing these n/a values is crucial, as they can stem from equipment malfunctions or transmission errors, compromising the reliability of findings. <br/>
+Conversely, missing data within the dataset presents another substantial challenge, as it hampers comprehensive trend assessments and undermines the completeness of analyses. This issue is exacerbated by gaps in monitoring infrastructure or discontinuities, necessitating robust strategies like interpolation or sensitivity analysis to mitigate its impact. <br/>
+Therefore, while Berkeley Earth data offers valuable insights into climate trends, addressing n/a values and missing data is paramount for ensuring the accuracy and reliability of research findings and subsequent policy decisions.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+>- Policymakers can use the insights to inform evidence-based climate policies, set emissions reduction targets, and prioritize adaptation measures.
+>- Scientists and researchers can leverage the findings to advance climate science, develop predictive models, and identify areas for further investigation.
+>- Civil society organizations and advocacy groups can use the data to raise awareness, mobilize action, and hold governments and corporations accountable for their environmental commitments.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+>- Complexity of climate data analysis: Climate datasets are often vast, heterogeneous, and complex, requiring advanced statistical and computational techniques for analysis and interpretation.
+>- Uncertainties and variability: Climate data may contain inherent uncertainties and natural variability, making it challenging to attribute specific events or trends solely to human-induced climate change.
+>- Interdisciplinary nature: Climate change intersects with various disciplines, including environmental science, economics, sociology, and policy studies, requiring interdisciplinary collaboration and expertise.
 
 ### Summary Information
 
@@ -82,3 +123,8 @@ Describe why you chose this chart and what information it reveals
 Include a chart
 
 Describe why you chose this chart and what information it reveals
+
+
+### References 
+>-  Hansen, J., Sato, M., & Ruedy, R. (2019). Global temperature update through 2018. GISS.
+>-  Le Quéré, C., Jackson, R. B., Jones, M. W., Smith, A. J., Abernethy, S., Andrew, R. M., ... & Canadell, J. G. (2020). Temporary reduction in daily global CO2 emissions during the COVID-19 forced confinement. Nature Climate Change, 10(7), 647-653.
