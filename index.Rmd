@@ -92,8 +92,7 @@ Therefore, while Berkeley Earth data offers valuable insights into climate trend
 >- Interdisciplinary nature: Climate change intersects with various disciplines, including environmental science, economics, sociology, and policy studies, requiring interdisciplinary collaboration and expertise.
 
 ### Summary Information
-<p>
-The exploratory analysis of global land temperature datasets reveals interesting 
+>The exploratory analysis of global land temperature datasets reveals interesting 
 patterns across various geographical regions. The dataset of average temperatures 
 by city shows a mean temperature of approximately 16.727°C. In the country dataset,
 the median average temperature is around 20.901°C. The highest average temperature 
@@ -103,7 +102,7 @@ Additionally, the standard deviation of the global land and ocean average
 temperature is 1.274°C, indicating the variability of temperature measurements 
 across different locations. These statistics provide a comprehensive overview of 
 temperature variations and highlight regions with extreme temperature records.
-</p>
+
 
 ### Table
 #### Aggregated Data for Cities
@@ -152,10 +151,6 @@ temperature variations and highlight regions with extreme temperature records.
 | India   | Maharashtra         | 25.9     | 25.9        | 18.1     | 33.8     | 0.866           |
 
 #### Description
-
-The tables above provide an aggregated overview of temperature data from various datasets, focusing on
-cities, countries, and states.
-
 1. **City Data**:
    - **Purpose**: This table aggregates temperature data by city, revealing the average, median, minimum,
      and maximum temperatures, along with the average uncertainty.
@@ -188,10 +183,6 @@ cities, countries, and states.
 - **Highlight Extremes**: Including cities and states with the highest and lowest temperatures helps to
   understand extreme climate conditions and their potential impacts.
 
-These tables serve as a foundational reference for further detailed climate analysis and contribute to a
-deeper understanding of global temperature patterns.
-
-
 ### Chart 1
 ```{r, echo = FALSE, code = readLines("FirstChart.R")}
 library(ggplot2)
@@ -207,11 +198,12 @@ print(country_chart)
 
 ```
 
-![Average Temperature by Country](chart_1.png)
-Why Chosen: This chart effectively displays the average temperature by country, allowing for a clear
+**Why Chosen**: 
+>This chart effectively displays the average temperature by country, allowing for a clear
 visual comparison of temperature variations across different countries.
 
-Information Revealed: It highlights countries with the highest and lowest average temperatures, providing
+**Information Revealed**: 
+>It highlights countries with the highest and lowest average temperatures, providing
 insight into global temperature distribution. This is particularly useful for identifying regions with
 extreme climates and understanding overall global temperature trends.
 
@@ -232,11 +224,12 @@ print(state_chart)
 
 ```
 
-![ Median Temperature by State](chart_2.png)
-Why Chosen: This chart presents the median temperature by state, offering a focused view on temperature
+**Why Chosen:** 
+>This chart presents the median temperature by state, offering a focused view on temperature
 variations within countries.
 
-Information Revealed: It shows which states experience the highest and lowest median temperatures,
+**Information Revealed:** 
+>It shows which states experience the highest and lowest median temperatures,
 highlighting regional climate differences within countries. This can help in understanding local climate
 patterns and the range of temperatures within larger geographic areas.
 
@@ -256,12 +249,12 @@ temperature_over_time <- ggplot(temperature_by_country, aes(x = dt, y = AverageT
 print(temperature_over_time)
 ```
 
-![ Median Temperature by State](chart_3.png)
-Why Chosen:This chart visualizes the distribution of average temperatures over time. 
+**Why Chosen:**
+>This chart visualizes the distribution of average temperatures over time. 
 plotting a line chart showing how average temperatures have changed over the years.
 
-Insights:
-By observing the trend of temperature distribution over time, we can identify 
+**Information Revealed:**
+>By observing the trend of temperature distribution over time, we can identify 
 long-term climate patterns such as global warming or cooling trends.
 Significant deviations from the expected temperature range can be easily spotted
 
