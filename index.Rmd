@@ -92,8 +92,18 @@ Therefore, while Berkeley Earth data offers valuable insights into climate trend
 >- Interdisciplinary nature: Climate change intersects with various disciplines, including environmental science, economics, sociology, and policy studies, requiring interdisciplinary collaboration and expertise.
 
 ### Summary Information
-
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+<p>
+The exploratory analysis of global land temperature datasets reveals interesting 
+patterns across various geographical regions. The dataset of average temperatures 
+by city shows a mean temperature of approximately 16.727°C. In the country dataset,
+the median average temperature is around 20.901°C. The highest average temperature 
+recorded in a major city is 38.283°C, observed in Baghdad, Iraq. In contrast, the 
+lowest temperature recorded in a state is -45.389°C, found in Sakha, Russia. 
+Additionally, the standard deviation of the global land and ocean average 
+temperature is 1.274°C, indicating the variability of temperature measurements 
+across different locations. These statistics provide a comprehensive overview of 
+temperature variations and highlight regions with extreme temperature records.
+</p>
 
 ### Table
 
