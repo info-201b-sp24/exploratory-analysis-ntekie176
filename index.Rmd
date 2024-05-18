@@ -106,34 +106,164 @@ temperature variations and highlight regions with extreme temperature records.
 </p>
 
 ### Table
+#### Aggregated Data for Cities
 
-Include a table of aggregate information
+| Country | City        | avg_temp | median_temp | min_temp | max_temp | avg_uncertainty |
+|---------|-------------|----------|-------------|----------|----------|-----------------|
+| Djibouti| Jibuti      | 29.2     | 28.8        | 23.2     | 35.8     | 0.923           |
+| Sudan   | Khartoum    | 29.1     | 30.3        | 18.5     | 35.7     | 0.891           |
+| Sudan   | Umm Durman  | 29.1     | 30.3        | 18.5     | 35.7     | 0.891           |
+| Niger   | Niamey      | 29.1     | 29.0        | 21.3     | 35.6     | 0.779           |
+| Sudan   | Kassala     | 28.9     | 29.1        | 21.5     | 35.5     | 0.861           |
+| Mali    | Mopti       | 28.8     | 29.6        | 20.1     | 35.6     | 0.890           |
+| Sudan   | Kusti       | 28.6     | 29.0        | 19.6     | 34.8     | 0.807           |
+| Sudan   | Rabak       | 28.6     | 29.0        | 19.6     | 34.8     | 0.807           |
+| India   | Alandur     | 28.4     | 28.7        | 21.6     | 34.6     | 0.999           |
+| India   | Ambattur    | 28.4     | 28.7        | 21.6     | 34.6     | 0.999           |
 
-Describe why you included the table and what information it reveals
+#### Aggregated Data for Countries
+
+| Country             | avg_temp | median_temp | min_temp | max_temp | avg_uncertainty |
+|---------------------|----------|-------------|----------|----------|-----------------|
+| Djibouti            | 28.8     | 28.4        | 23.0     | 35.2     | 0.885           |
+| Mali                | 28.4     | 30.0        | 19.1     | 35.3     | 0.775           |
+| Burkina Faso        | 28.1     | 27.7        | 22.9     | 33.7     | 0.698           |
+| Senegal             | 28.0     | 28.2        | 21.5     | 32.9     | 0.710           |
+| Aruba               | 27.9     | 28.1        | 24.1     | 30.8     | 0.645           |
+| United Arab Emirates| 27.7     | 28.3        | 15.7     | 37.8     | 0.811           |
+| Mauritania          | 27.6     | 28.9        | 17.3     | 34.7     | 0.851           |
+| Gambia              | 27.5     | 27.7        | 21.6     | 31.7     | 0.725           |
+| Niger               | 27.5     | 29.3        | 16.2     | 35.0     | 0.865           |
+| Curaçao             | 27.4     | 27.6        | 23.7     | 30.0     | 0.645           |
+
+#### Aggregated Data for States
+
+| Country | State               | avg_temp | median_temp | min_temp | max_temp | avg_uncertainty |
+|---------|---------------------|----------|-------------|----------|----------|-----------------|
+| India   | Puducherry          | 27.3     | 27.4        | 22.2     | 31.9     | 0.849           |
+| India   | Andaman And Nicobar | 27.2     | 27.3        | 23.3     | 30.2     | 0.855           |
+| India   | Andhra Pradesh      | 27.1     | 27.3        | 19.9     | 34.4     | 0.891           |
+| Brazil  | Rio Grande Do Norte | 27.0     | 27.1        | 24.2     | 29.5     | 0.686           |
+| India   | Tamil Nadu          | 26.7     | 26.9        | 21.7     | 31.2     | 0.851           |
+| India   | Kerala              | 26.3     | 26.0        | 23.1     | 30.3     | 0.822           |
+| India   | Gujarat             | 26.3     | 27.2        | 16.7     | 34.0     | 0.868           |
+| India   | Daman And Diu       | 26.3     | 27.0        | 19.2     | 31.4     | 0.894           |
+| Brazil  | Amazonas            | 26.1     | 26.1        | 24.0     | 28.2     | 0.594           |
+| India   | Maharashtra         | 25.9     | 25.9        | 18.1     | 33.8     | 0.866           |
+
+#### Description
+
+The tables above provide an aggregated overview of temperature data from various datasets, focusing on
+cities, countries, and states.
+
+1. **City Data**:
+   - **Purpose**: This table aggregates temperature data by city, revealing the average, median, minimum,
+     and maximum temperatures, along with the average uncertainty.
+   - **Insight**: It highlights which cities have the highest and lowest average temperatures. For example,
+     cities in Djibouti and Sudan have some of the highest average temperatures, whereas Indian cities
+     like Alandur and Ambattur also have high averages but with higher uncertainty.
+
+2. **Country Data**:
+   - **Purpose**: This table aggregates temperature data by country, showing the average, median, minimum,
+     and maximum temperatures, along with average uncertainty.
+   - **Insight**: Countries like Djibouti and Mali consistently have high average temperatures. The data
+     also reveals temperature variation within countries, useful for understanding regional climate
+     differences.
+
+3. **State Data**:
+   - **Purpose**: This table aggregates temperature data by state, providing insights into temperature
+     variations within countries.
+   - **Insight**: States in India and Brazil are prominently featured, showing significant temperature
+     ranges. This data is crucial for local climate studies and for understanding how temperature changes
+     within a country.
+
+### Why Include These Tables?
+
+- **Comprehensive Overview**: These tables offer a clear and concise summary of temperature data across
+  different geographical levels, providing a broad perspective on global temperature variations.
+- **Comparative Analysis**: By presenting data for cities, countries, and states, it allows for comparison
+  between different regions, helping to identify patterns and anomalies.
+- **Data-Driven Decisions**: This aggregated information is valuable for researchers, policymakers, and
+  analysts to make informed decisions based on temperature trends and uncertainties.
+- **Highlight Extremes**: Including cities and states with the highest and lowest temperatures helps to
+  understand extreme climate conditions and their potential impacts.
+
+These tables serve as a foundational reference for further detailed climate analysis and contribute to a
+deeper understanding of global temperature patterns.
+
 
 ### Chart 1
+```{r, echo = FALSE, code = readLines("FirstChart.R")}
+library(ggplot2)
 
-Include a chart
+# Chart 1: Average Temperature by Country
+country_chart <- ggplot(country_table, aes(x = reorder(Country, avg_temp), y = avg_temp)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  coord_flip() +
+  labs(title = "Average Temperature by Country", x = "Country", y = "Average Temperature") +
+  theme_minimal()
 
-Describe why you chose this chart and what information it reveals
+print(country_chart)
 
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
 
+![Average Temperature by Country](chart_1.png)
+Why Chosen: This chart effectively displays the average temperature by country, allowing for a clear
+visual comparison of temperature variations across different countries.
+
+Information Revealed: It highlights countries with the highest and lowest average temperatures, providing
+insight into global temperature distribution. This is particularly useful for identifying regions with
+extreme climates and understanding overall global temperature trends.
+
+
+
 ### Chart 2
+```{r, echo = FALSE, code = readLines("SecondChart.R")}
+library(ggplot2)
 
-Include a chart
+# Chart 2: Median Temperature by State
+state_chart <- ggplot(state_table, aes(x = reorder(State, median_temp), y = median_temp)) +
+  geom_bar(stat = "identity", fill = "orange") +
+  coord_flip() +
+  labs(title = "Median Temperature by State", x = "State", y = "Median Temperature") +
+  theme_minimal()
 
-Describe why you chose this chart and what information it reveals
+print(state_chart)
+
+```
+
+![ Median Temperature by State](chart_2.png)
+Why Chosen: This chart presents the median temperature by state, offering a focused view on temperature
+variations within countries.
+
+Information Revealed: It shows which states experience the highest and lowest median temperatures,
+highlighting regional climate differences within countries. This can help in understanding local climate
+patterns and the range of temperatures within larger geographic areas.
 
 ### Chart 3
+```{r, echo = FALSE, code = readLines("ThirdChart.R")}
+library(ggplot2)
+temperature_by_country$dt <- as.Date(temperature_by_country$dt)
 
-Include a chart
+# Plot the temperature distribution over time
+temperature_over_time <- ggplot(temperature_by_country, aes(x = dt, y = AverageTemperature)) +
+  geom_line() +
+  labs(title = "Temperature Distribution Over Time",
+       x = "Date",
+       y = "Average Temperature") +
+  theme_minimal()
 
-Describe why you chose this chart and what information it reveals
+print(temperature_over_time)
+```
 
+![ Median Temperature by State](chart_3.png)
+Why Chosen:This chart visualizes the distribution of average temperatures over time. 
+plotting a line chart showing how average temperatures have changed over the years.
+
+Insights:
+By observing the trend of temperature distribution over time, we can identify 
+long-term climate patterns such as global warming or cooling trends.
+Significant deviations from the expected temperature range can be easily spotted
 
 ### References 
 >-  Hansen, J., Sato, M., & Ruedy, R. (2019). Global temperature update through 2018. GISS.
