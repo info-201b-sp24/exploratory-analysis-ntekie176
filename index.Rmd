@@ -20,9 +20,11 @@ output: html_document
 >This project aims to analyze various aspects of climate change through data exploration and analysis. 
 By examining datasets related to climate indicators, greenhouse gas emissions, and environmental impacts, 
 we seek to uncover patterns, trends, and correlations to deepen our understanding of climate change dynamics.
+
 ### Keywords
 
-3-5 keywords that summarize your project.
+3-5 keywords that summarize your project
+
 >Climate Change, Data Analysis, Environmental Science, Greenhouse Gas Emissions, Sustainability
 
 ### Introduction 
