@@ -1,6 +1,6 @@
 # Exploratory Analysis
 
-Link to your group's exploratory analysis here: [Click the Group Html File Link Here to View](https://htmlpreview.github.io/?https://github.com/info-201b-sp24/exploratory-analysis-ntekie176/blob/main/index.html)
+Link to your group's exploratory analysis here: https://ntekie176.github.io/info-201b-sp24.github.io/
 
 The purpose of this assignment is to provide you with the opportunity to explore your final project data and become familiar with collaborative coding techniques. By completing the assignment, you will demonstrate the following skills:
 
