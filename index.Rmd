@@ -66,11 +66,20 @@ The Berkeley Earth Surface Temperature Study combines 1.6 billion temperature re
 > **Why was the data collected?**  
 Berkeley collectes and publishes scientific and data analysis data to help deliver and communicate their findings to the broadest possible audience.
 
+```{r summary_info, echo=FALSE}
+# Load the data
+temperature_data <- read.csv("https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/climate-change-earth-surface-temperature-data.csv", stringsAsFactors = FALSE)
+```
+
 > **How many observations (rows) are in your data?**  
-3192 rows 
+```{r summary_info echo=FALSE}
+r nrow(temperature_data) 
+```
 
 > **How many features (columns) are in the data?**  
-9 columns 
+```{r summary_info echo=FALSE}
+r ncol(temperature_data) 
+```
 
 > **What, if any, ethical questions or questions of power do you need to consider when working with this data?**  
 When using temperature data from Berkeley Earth, ethical considerations include evaluating the accuracy of instruments used for data collection and ensuring transparency regarding calibration and potential biases. 
