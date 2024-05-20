@@ -68,7 +68,7 @@ Berkeley collectes and publishes scientific and data analysis data to help deliv
 
 ```{r summary_info, echo=FALSE}
 # Load the data
-temperature_data <- read.csv("https://raw.githubusercontent.com/melaniewalsh/Neat-Datasets/main/climate-change-earth-surface-temperature-data.csv", stringsAsFactors = FALSE)
+temperature_data <- read.csv("Datasets/GlobalTemperatures.csv", stringsAsFactors = FALSE)
 ```
 
 > **How many observations (rows) are in your data?**  
